@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;   
+    justify-content: center;
+    background-image: url("C:/Workspace/JavaScript/ContadorTruco/assets/CSS/Images/fundo.jpg");
+    font-family: sans-serif;
+    height: 900px;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.topo img{
+    height: 60px;
+    width: 60px;
+    margin: 0 15px;
+}
+
+.times{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.times input{
+    font-size: 36px;
+    font-weight: bold;
+    align-content: center;
+    resize: none;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 10px;
+}
+
+#time-um{
+    border: 2px solid black;
+}
+
+#time-dois{
+    border: 2px solid red;
+    color: red;
+}
+
+.times button{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.pontos{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.divisor{
+    display: flex;
+    background-color: black;
+    width: 7px;
+    height: 150px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes button{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    margin: 15px 0;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.botoes img{
+    height: 50px;
+    width: 50px;
+}
+
+#bDois{
+    color: red;
+}
+
+.pontos-um{
+    display: flex;
+    font-size: 160px;
+    justify-content: space-around;
+    width:200px;
+}
+
+.pontos-dois{
+    display: flex;
+    font-size: 160px;
+    justify-content: space-around;
+    width:200px;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.rodape div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.rodape button{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-weight:bolder;
+    color: white;
+    background-color: black;
+}

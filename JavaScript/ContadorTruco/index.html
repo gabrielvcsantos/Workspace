@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Truco</title>
+    <link rel="stylesheet" href="./assets/CSS/styles.css">
+</head>
+<body> 
+    <div class="topo">
+        <img src="C:\Workspace\JavaScript\ContadorTruco\assets\CSS\Images\paus.png" alt="paus">
+        <h1>Marcador Truco</h1>
+        <img src="C:\Workspace\JavaScript\ContadorTruco\assets\CSS\Images\copas.png" alt="copas">
+    </div>
+    <div class="times">
+        <button name="nomeUm" id="nome-um" onclick="nomeUm()">OK</button>
+
+        <input name="timeUm" id="time-um" cols="15" rows="1" minlength=3 maxlength=15>
+
+        <input name="timeDois" id="time-dois" cols="15" rows="1" minlength=3 maxlength=15>
+
+        <button name="nomeDois" id="nome-dois" onclick="nomeDois()">OK</button>
+    </div>
+
+    <div class="pontos">
+        <div class="botoes">
+            <button id="adicionar-um" onclick="adUm()">+</button>
+            <button id="subtrair-um" onclick="subUm()">-</button>
+        </div>
+
+        <div class="pontos-um">
+            <span id="pontosUm">0</span>
+        </div>
+        <div class="divisor"></div>
+        <div class="pontos-dois">
+            <span id="pontosDois">0</span>
+        </div>
+
+        <div class="botoes">
+            <button id="adicionar-dois" onclick="adDois()">+</button>
+            <button id="subtrair-dois" onclick="subDois()">-</button>
+        </div>
+
+        
+    </div>
+
+    <div class="rodape">
+        <div>
+            <button id="truco" onclick="truco()">TRUCO!</button>
+            <button id="seis" onclick="seis()">SEEIS!</button>
+            <button id="nove" onclick="nove()">NOOOVE!</button>
+            <button id="doze" onclick="doze()">DOOOOZE!</button>
+        </div>
+    </div>
+
+    <div class="novo-jogo">
+
+    </div>
+    <script src="./assets/JS/scripts.js"></script>
+</body>
+</html>
