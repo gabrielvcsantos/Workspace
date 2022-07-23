@@ -16,15 +16,15 @@
     <div class="times">
         <button name="nomeUm" id="nome-um" onclick="nomeUm()">OK</button>
 
-        <input name="timeUm" id="time-um" cols="15" rows="1" minlength=3 maxlength=15>
+        <input name="timeUm" id="time-um" cols="15" rows="1" minlength=3 maxlength=15 value="Time 1">
 
-        <input name="timeDois" id="time-dois" cols="15" rows="1" minlength=3 maxlength=15>
+        <input name="timeDois" id="time-dois" cols="15" rows="1" minlength=3 maxlength=15 value="Time 2">
 
         <button name="nomeDois" id="nome-dois" onclick="nomeDois()">OK</button>
     </div>
 
-    <div class="pontos">
-        <div class="botoes">
+    <div class="pontos" id="points">
+        <div class="botoes" id="botoes">
             <button id="adicionar-um" onclick="adUm()">+</button>
             <button id="subtrair-um" onclick="subUm()">-</button>
         </div>
@@ -37,7 +37,7 @@
             <span id="pontosDois">0</span>
         </div>
 
-        <div class="botoes">
+        <div class="botoes" id="botoes-dois">
             <button id="adicionar-dois" onclick="adDois()">+</button>
             <button id="subtrair-dois" onclick="subDois()">-</button>
         </div>
@@ -45,8 +45,8 @@
         
     </div>
 
-    <div class="rodape">
-        <div>
+    <div class="rodape" id="roda">
+        <div class="botose" id="botoes-dois">
             <button id="truco" onclick="truco()">TRUCO!</button>
             <button id="seis" onclick="seis()">SEEIS!</button>
             <button id="nove" onclick="nove()">NOOOVE!</button>
@@ -54,8 +54,13 @@
         </div>
     </div>
 
-    <div class="novo-jogo">
+    <div class="venc">
+        <h1 id="vencedor"></h1>
+    </div>
 
+    <div class="novo-jogo" id="newGame">
+        <button id="novo-jogo" onclick="novoJogo()">Novo Jogo</button>
+        <button id="fechar" onclick="fechar()">Fechar Página</button>
     </div>
     <script src="./assets/JS/scripts.js"></script>
 </body>
